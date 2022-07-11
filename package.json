@@ -1,0 +1,25 @@
+{
+  "name": "sistemas_corporativos",
+  "version": "1.0.0",
+  "description": "evaluacion final de sistemas corporativos",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rommelpalma123/sistemas_corporativos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rommelpalma123/sistemas_corporativos/issues"
+  },
+  "homepage": "https://github.com/Rommelpalma123/sistemas_corporativos#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.4.4",
+    "morgan": "^1.10.0"
+  }
+}
