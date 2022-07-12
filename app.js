@@ -27,12 +27,54 @@ app.get('/accesorios', (req, res) => {
 });
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+app.get('/computadoras', (req, res) => {
+    res.render('computadora');
 app.get('/asesor', (req, res) => {
     res.render('asesor');
 });
 
 app.get('/venta', (req, res) => {
     res.render('venta');
+
 });
 
 app.get('/portatil', (req, res) => {
