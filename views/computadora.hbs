@@ -12,26 +12,25 @@
     }
 
 .entrada{ 
-    border: 2px solid #559;
+    border: 1px solid #559;
     margin-top: 5px; 
     height: 30px;
     width: 200px;
     background-color: rgba(223, 230, 199, 0.6)
 }
 
-.btn{ 
+.entrada:hover{background-color: rgb(28, 22, 15) ; color: #fff; border-bottom: 2px solid #0fbf4d}
 
+.btn{ 
     background-color: #77b68d;
     border: 2px solid #77b68d;
     border-radius: 10px;
     height: 40px;
-    width: 100px;
+    width: 150px;
     color: #fff;
-    margin-left: 60px;
+    margin-left: 30px;
 }
-
 .btn:hover{ color:aquamarine; background-color: rgb(29, 34, 32);}
-.entrada:hover{background-color: rgb(28, 22, 15) ; color: #fff; border-bottom: 2px solid #0fbf4d}
 
 .aside{ 
     float: left;
@@ -45,42 +44,40 @@
 .aside1{
     border-radius: 100%;
     filter: blur(1px);
-    filter: contrast(1);
-    filter: brightness(0.4);
+    filter: contrast(2);
+        filter: brightness(0.4);
+
+
 }
 </style>
 <div class="main">
-    <h2 class="titulo">registro de accesorios</h2>
-<form method="post" id="accesorios">
-    <input type="text" name="placa" placeholder="placa" class="entrada">
+    <h2 class="titulo">registro de computadoras </h2>
+<form method="post" id="computadoras">
+    <input type="text" name="placa" placeholder="marca" class="entrada">    
     <br><br>
-    <input type="text" name="audífonos" placeholder="audífonos" class="entrada">
+    <input type="text" name="audífonos" placeholder="color" class="entrada">
     <br><br>
-    <input type="text" name="micrófono" placeholder="micrófono" class="entrada">
+    <input type="text" name="micrófono" placeholder="pantalla" class="entrada">
     <br><br>
-    <input type="text" name="ventiladores" placeholder="ventiladores" class="entrada">
+    <input type="text" name="ventiladores" placeholder="teclado" class="entrada">
     <br><br>
     <input type="text" name="mouse" placeholder="mouse" class="entrada">
     <br><br>
-    <input type="text" name="mousepad" placeholder="mousepad" class="entrada">
+    <input type="text" name="mousepad" placeholder="camara" class="entrada">
     <br><br>
-    <input type="text" name="monitor" placeholder="monitor" class="entrada">
-    <br><br>
-    <input type="text" name="teclado" placeholder="teclado" class="entrada">
-    <br><br>
-    <input type="text" name="fuente" placeholder="fuente" class="entrada">
+    <input type="text" name="monitor" placeholder="sistema operativo" class="entrada">
     <br><br>
     <input type="submit" value="enviar registro" class="btn">
 </form>
 </div>
 <div class="aside">
-    <img class="aside1" src="https://mejoreslaptops.com/wp-content/uploads/2020/06/Las-mejores-laptops-para-trabajar-desde-casa.jpg" alt="imagen">
+    <img class="aside1" src="https://www.tecnologia-informatica.com/wp-content/uploads/2018/07/tipos-de-computadoras-1.jpeg" alt="imagen">
 </div>
 
 
 <script type="text/javascript">
 
-const formLogin = document.querySelector('#accesorios')
+const formLogin = document.querySelector('#computadoras')
 const formData = new FormData(formLogin)
 
 formLogin.addEventListener('submit',event => {

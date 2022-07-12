@@ -18,13 +18,14 @@ app.engine('.hbs', engine());
 app.set('view engine', '.hbs');
 app.set('views', './views');
 
-app.get('/', (req, res) => {
+app.get('/login', (req, res) => {
     res.render('login');
 });
 
 app.get('/accesorios', (req, res) => {
     res.render('accesorios');
 });
+
 
 app.get('/asesor', (req, res) => {
     res.render('asesor');
@@ -37,6 +38,7 @@ app.get('/venta', (req, res) => {
 app.get('/portatil', (req, res) => {
     res.render('portatil');
 });
+
 
 
 app.use('/', routes,routes2,routes3,routes4);

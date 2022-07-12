@@ -1,0 +1,84 @@
+{
+    "usuario":
+    {
+        "nombre": "String",
+        "contraseña": "String"
+    },
+
+    "computadora": 
+    {
+        "id_computadora": "String",
+        "marca": "String",
+        "color": "String",
+        "pantalla   ": "String",
+        "teclado": "String",
+        "camara": "String",
+        "sistema_operativo": "String",
+        "usuario":
+        {
+            "id": "String",
+            "nombre": "String"
+        }
+    },
+
+    "portatiles": 
+    {
+        "id_portatil": "String",
+        "marca": "String",
+        "color": "String",
+        "pantalla": "String",
+        "procesador": "String",
+        "descripcion": "String",
+        "protector": "String",
+        " sistema_operativo": "String",
+        "usuario":
+        {
+            "id": "String",
+            "nombre": "String"
+        }
+    },
+
+        "accesorios": 
+        {
+            "id_accesorio": "String",
+            "placa": "String",
+            "audífonos": "String",
+            "micrófono": "String",
+            "ventiladores": "String",
+            "mouse": "String",
+            "mousepad": "String",
+            " monitor": "String",
+            " teclado": "String",
+            " fuente": "String",
+            "usuario":
+            {
+                "id": "String",
+                "nombre": "String"
+
+            }
+        }  ,
+        "asesores": 
+        {
+            "id_asesores": "String",
+            "nombre": "String",
+            "edad": "String",
+            "cargo": "String",
+            "apellido": "String",
+            "sexo": "String",
+            "cedula": "String",
+            "ventas":
+            {
+                "id_venta": "String"
+            }
+        },
+
+        "ventas":
+        {
+            "id_venta":"String",
+            "precio":"String",
+            "cantidad":"String",
+            "id_computadora":"String",
+            "id_portil":"String",
+            "id_accesorio": "String"
+        }
+}
