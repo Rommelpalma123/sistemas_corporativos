@@ -1,0 +1,89 @@
+<style>
+
+.titulo{
+
+    text-shadow: 0 3px  #ff34;
+}
+.main{ 
+    
+    float: right;    
+    width: 48.5%;
+    margin: 50px auto;
+    }
+
+.entrada{ 
+    border: 2px solid #559;
+    margin-top: 5px; 
+    height: 30px;
+    width: 200px;
+    background-color: rgba(223, 230, 199, 0.6)
+}
+
+.btn{ 
+
+    background-color: #77b68d;
+    border: 2px solid #77b68d;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    color: #fff;
+    margin-left: 60px;
+}
+
+.aside{ 
+    float: left;
+    width: 24%;
+    margin-left: 60px;
+    margin-top: 120px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.aside1{
+    border-radius: 100%;
+}
+</style>
+<div class="main">
+    <h2 class="titulo">registro de accesorios</h2>
+<form method="post" id="accesorios">
+    <input type="text" name="placa" placeholder="placa" class="entrada">
+    <br><br>
+    <input type="text" name="audífonos" placeholder="audífonos" class="entrada">
+    <br><br>
+    <input type="text" name="micrófono" placeholder="micrófono" class="entrada">
+    <br><br>
+    <input type="text" name="ventiladores" placeholder="ventiladores" class="entrada">
+    <br><br>
+    <input type="text" name="mouse" placeholder="mouse" class="entrada">
+    <br><br>
+    <input type="text" name="mousepad" placeholder="mousepad" class="entrada">
+    <br><br>
+    <input type="text" name="monitor" placeholder="monitor" class="entrada">
+    <br><br>
+    <input type="text" name="teclado" placeholder="teclado" class="entrada">
+    <br><br>
+    <input type="text" name="fuente" placeholder="fuente" class="entrada">
+    <br><br>
+    <input type="submit" value="enviar registro" class="btn">
+</form>
+</div>
+<div class="aside">
+    <img class="aside1" src="https://static9.depositphotos.com/1000128/1192/i/600/depositphotos_11929742-stock-photo-computer-mobility-and-cloud-computing.jpg" alt="imagen">
+</div>
+
+
+<script type="text/javascript">
+
+const formLogin = document.querySelector('#accesorios')
+const formData = new FormData(formLogin)
+
+formLogin.addEventListener('submit',event => {
+    event.preventDefault();
+    fetch('/', async {
+        method: 'POST',
+        body: formData
+    })
+    .then(res => res.json())
+    .then(data => await console.log(data))
+})
+</script>
