@@ -1,0 +1,67 @@
+<style>
+
+.titulo{
+
+    text-shadow: 0 3px  #ff34;
+}
+.contenedor{ 
+    
+    margin: 250px auto;
+    margin-left: 650px;
+    }
+
+.entrada{ 
+    border: 2px solid #559;
+    margin-top: 5px; 
+    height: 30px;
+    width: 200px;
+    background-color: rgba(223, 230, 199, 0.6)
+}
+
+.btn{ 
+
+    background-color: #77b68d;
+    border: 2px solid #77b68d;
+    border-radius: 10px;
+    height: 40px;
+    width: 60px;
+    color: #fff;
+    margin-left: 60px;
+}
+</style>
+<div class="contenedor">
+    <h2 class="titulo">Registro de portatiles</h2>
+<form method="post" id="portatil">
+    <input class="entrada" type="text" name="marca" placeholder="ingrese la marca" id="marca">
+    <br><br>
+    <input class="entrada" type="text" name="color" placeholder="ingrese color" id="color">
+    <br><br>
+    <input class="entrada" type="text" name="pantalla" placeholder="ingrese pantalla" id="pantalla">
+    <br><br>
+    <input class="entrada" type="text" name="procesador" placeholder="ingrese procesador" id="procesador">
+    <br><br>
+    <input class="entrada" type="text" name="mouse" placeholder="ingrese mouse" id="mouse">
+    <br><br>
+    <input class="entrada" type="text" name="protector" placeholder="ingrese protector" id="protector">
+    <br><br>
+    <input class="entrada" type="text" name="sistema operativo" placeholder="ingrese sistema operativo" id="sistema operativo">
+    <br><br>
+    <input type="submit" value="login" class="btn">
+</form>
+</div>
+
+<script type="text/javascript">
+
+const formLogin = document.querySelector('#portatil')
+const formData = new FormData(formLogin)
+
+formLogin.addEventListener('submit',event => {
+    event.preventDefault();
+    fetch('/', async {
+        method: 'POST',
+        body: formData
+    })
+    .then(res => res.json())
+    .then(data => await console.log(data))
+})
+</script>

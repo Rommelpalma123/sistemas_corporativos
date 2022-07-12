@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-router.post('/asesor', (req, res) => 
+router.post('/portatil', (req, res) => 
 {
-    res.send('asesor registrado')
+    res.send('portatil registrada')
 });
 
 module.exports = router; 
