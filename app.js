@@ -15,7 +15,7 @@ app.engine('.hbs', engine());
 app.set('view engine', '.hbs');
 app.set('views', './views');
 
-app.get('/', (req, res) => {
+app.get('/login', (req, res) => {
     res.render('login');
 });
 

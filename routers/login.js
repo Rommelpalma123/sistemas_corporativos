@@ -1,9 +1,14 @@
 const express = require('express');
 const router = express.Router();
+const login = require('../models/login');
 
-router.post('/', (req, res) => 
+router.post('/login',async (req, res) => 
 {
-    res.send('registrado exitosamente')
+    const login = await new login(req.body);
+    login.save();
+    console.log(new login(req.body));
+    console.log(req.body)
+    res.redirect('/')   
 });
 
 router.post('/accesorios', (req, res) => 

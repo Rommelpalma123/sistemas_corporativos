@@ -1,4 +1,4 @@
-const Schema = mongoose.Schema;
+/*const Schema = mongoose.Schema;
 const mongoose = require('mongoose');
 
 const login = new Schema({
@@ -7,4 +7,4 @@ const login = new Schema({
     apellido: String,
 });
 
-module.exports = mongoose.model("login", login)
+module.exports = mongoose.model("login", login)*/
