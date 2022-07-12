@@ -8,6 +8,11 @@ router.post('/', (req, res) =>
 
 router.post('/accesorios', (req, res) => 
 {
-    res.send('accesorios enviados')
+    res.send('accesorios registrados')
 });
-module.exports = router; 
+
+router.post('/computadoras', (req, res) => 
+{
+    res.send('computadora registrada')
+});
+module.exports = router;

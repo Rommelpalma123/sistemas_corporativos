@@ -23,6 +23,9 @@ app.get('/accesorios', (req, res) => {
     res.render('accesorios');
 });
 
+app.get('/computadoras', (req, res) => {
+    res.render('computadora');
+});
 
 
 app.use('/', routes);
